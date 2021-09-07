@@ -1,0 +1,29 @@
+{
+    "name": "spaaleks/laragistry",
+    "description": "Laragistry - a minimal Laravel key/value registry",
+    "type": "library",
+    "license": "GPL-3.0-only",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Spaaleks\\Laragistry\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aleksandar Spasojevic",
+            "email": "aleksandar@spasojevic.at"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spaaleks\\Laragistry\\Providers\\LaragistryServiceProvider"
+            ],
+            "aliases": {
+                "Laragistry": "\\Spaaleks\\Laragistry\\Laragistry"
+            }
+        }
+    },
+    "require": {}
+}
